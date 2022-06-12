@@ -1,10 +1,15 @@
 import './App.css';
-import Navbar from 'components/navbar.jsx';
+import QuestionCard from 'components/Question.jsx';
+import AllQuestions from 'assets/data/AllQuestions'
+import { useState } from 'react';
 
 function App() {
+  const [ques,setQues] = useState(AllQuestions);
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <div className="questions-container">
+        {ques.map((q)=>{return (<QuestionCard each_ques={q} key={q.id}/>)})}
+      </div>
     </div>
   );
 }

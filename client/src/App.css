@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .App {
   background-color: #17141d;
 }
-
+.questions-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.hover-ptr{
+  cursor: pointer;
+}
+.noselect {
+  user-select: none; /* Non-prefixed version, currently
+                      supported by Chrome, Edge, Opera and Firefox */
+}
+@font-face {
+  font-family: DM_Mono;
+  src: url('assets/fonts/DM_Mono/DMMono-Light.ttf');
+}

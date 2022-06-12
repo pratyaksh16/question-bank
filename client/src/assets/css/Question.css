@@ -1,0 +1,83 @@
+.question-card{
+    border-radius:1vw;
+    height: 7vw;
+    margin-top: 3vh;
+    width: 80%;
+    min-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0rem 0rem 1.2rem black;
+    transition: all 0.15s ease-in-out;
+}
+
+.question-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0rem 0px 1.5rem 0.5rem black;
+}
+.question-info{
+    width: 75%;
+    height: 100%;
+}
+.question-number-name{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding-left: 1em;
+}
+.question-number-name h3{
+    margin: 0;
+    color:antiquewhite;
+    font-family: DM_Mono;
+    border: solid 0.1vw #17141d;
+    transition: all 0.15s ease-in-out;
+}
+.question-number-name h3:hover{
+    border-bottom: solid 0.1vw antiquewhite;
+}
+.question-tags-list{
+    display:flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.question-tags:first-child{
+    margin-left:1em ;
+}
+.question-tags{
+    cursor: pointer;
+    border: solid 2px rgb(255, 255, 255,0.5);
+    margin-right: 0.5em;
+    border-radius:1em ;
+    padding: 5px;
+    color: rgb(255, 255, 255,0.5);
+    transition: all 0.15s ease-in-out;
+}
+.question-tags:hover{
+    background-color: rgb(255, 255, 255,0.2);
+}
+.question-edits{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.icon{
+    width: 30%;
+}
+.icon:hover{
+    cursor: pointer;
+    stroke-width: 50;
+}
+.icon path{
+    stroke-width: 15;
+    transition: all 0.15s ease-in-out;
+}
+.star-svg path{
+    stroke: aqua;
+}
+.del-svg path{
+    stroke: #ff8a00;
+}
